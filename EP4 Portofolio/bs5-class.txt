@@ -1,0 +1,35 @@
+class = "" 
+
+text-align:"center" == text-center        posisi elemen text
+text-align:"right" == text-start
+text-align:"left" == text-end
+
+navbar-dark : otomatis text menjadi terang kalau "navbar-light" nanti mejadi gelap 
+rounded-circle : agar gambar atau elemen menjadi bulat == border-radius : 50%
+
+<row>
+   <col>
+   <col>
+   <col>
+
+"justify-content-center" ditulis pada row yang didalamnya terdapat colom
+fs-5 == font-size
+text-center == justify
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

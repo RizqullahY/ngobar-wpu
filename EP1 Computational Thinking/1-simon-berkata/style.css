@@ -1,0 +1,61 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+   display: grid;
+   place-items: center;
+}
+
+.wrapper {
+   width: 20rem;
+   height: 20rem;
+   border: 2px solid black;
+}
+
+.container {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   transition: 1s;
+}
+
+.rotate {
+   transform: rotate(90deg);
+}
+
+.box {
+   width: 50%;
+   height: 50%;
+   border: 2px solid black;
+}
+
+#btn {
+   padding: 1rem 2rem;
+   background-color: #783f04;
+   cursor: pointer;
+   color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.satu {
+   background-color: red;
+}
+
+.dua {
+   background-color: yellow;
+}
+
+.tiga {
+   background-color: green;
+}
+
+.empat {
+   background-color: blue;
+}

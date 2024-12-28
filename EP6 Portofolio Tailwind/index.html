@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>raflyasliGalek</title>
+		<link rel="stylesheet" href="src/output.css" />
+		<link rel="icon" type="image/png" sizes="32x32" href="src/img/icon-remando.png"/>
+		<!-- Swipper -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<!-- CDN Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- AOS -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- Sweet Alert -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<style>
+			.swiper-container {
+				width: 100%;
+				height: 20rem;
+				position: relative;
+			}
+			.swiper-slide {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!--* Header -->
+		<header
+			class="bg-transparent navbar-fixed top-0 left-0 w-full flex items-center z-10"
+		>
+			<div class="container">
+				<div class="flex items-center justify-between relative">
+					<div class="px-4">
+						<a href="#home" class="font-bold text-lg text-primary block py-6"
+							>rizqullahyusuf</a
+						>
+					</div>
+					<div class="flex items-center px-4">
+						<button
+							id="hamburger"
+							name="hamburger"
+							type="button"
+							class="block absolute right-4 lg:hidden"
+						>
+							<span
+								class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+							></span>
+							<span class="hamburger-line transition duration-300 ease-in-out"></span>
+							<span
+								class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+							></span>
+						</button>
+						<nav
+							id="nav-menu"
+							class="hidden absolute p-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent"
+						>
+							<ul class="block lg:flex">
+								<li class="group">
+									<a
+										href="#home"
+										class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+										>Beranda</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#about"
+										class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+										>Tentang Saya</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#portfolio"
+										class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+										>Portofolio</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#tech"
+										class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+										>Tech</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#blog"
+										class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+										>Blog</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#contact"
+										class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+										>Kontak</a
+									>
+								</li>
+								<li class="flex items-center pl-8">
+									<div class="flex">
+										<span class="text-sm text-slate-500 mr-2">Light</span>
+										<input type="checkbox" id="dark-toggle" class="hidden" />
+										<label for="dark-toggle">
+											<div
+												class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer"
+											>
+												<div
+													class="w-4 h-4 bg-white rounded-full toggle-circle transition duration-500 ease-in-out"
+												></div>
+											</div>
+										</label>
+										<span class="text-sm text-slate-500 ml-2">Dark</span>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End-->
+
+		<!--* Hero Section -->
+		<section id="home" class="pt-36 dark:bg-dark">
+			<div class="container">
+				<div class="flex flex-wrap">
+					<div class="w-full self-center px-4 mb-10 lg:w-1/2" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+						<h1 class="text-base font-semibold text-primary md:text-xl lg-2xl">
+							Halo semuanya 👋, saya
+							<span
+								class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white"
+								>Rafly Rizqullah Yusuf</span
+							>
+						</h1>
+						<h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
+							Programmer |
+							<span class="text-dark dark:text-white">Cyber Security </span> | Data
+							Analyst
+						</h2>
+						<p class="font-medium text-slate-400 mb-10 leading-relaxed">
+							Fullstack Web Developer dan Mobile developer yang sedang menjalani
+							pelatihan di UT School. Penggemar tantangan 
+							<a href="https://ctf.rajawalisecteam.eu.org/"  target="_blank" class="hover:text-primary">CTF</a> dari 
+							<a href="https://rajawalisecteam.eu.org/" target="_blank" class="hover:text-primary">RST</a>
+						</p>
+						<a
+							href="https://wa.me/6287859860459"
+							target="_blank"
+							class="text-base font-semibold bg-primary text-white py-3 px-8 rounded-full hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+							>Hubungi Saya</a
+						>
+					</div>
+					<div class="w-full self-end px-4 lg:w-1/2" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+						<div class="mt-10 relative lg:mt-9 lg:right-0">
+							<img
+								src="src/img/rafly.png"
+								alt="Rafly Rizqullah"
+								class="max-w-full mx-auto relative z-10"
+							/>
+							<span class="absolute bottom-0 left-1/2 -translate-x-1/2 sm:scale-150">
+								<svg
+									width="300"
+									height="300"
+									viewBox="0 0 200 200"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill="#FACC15"
+										d="M33.5,-61.2C42.3,-53,47.6,-41.7,50.5,-31C53.4,-20.3,54,-10.2,54.3,0.2C54.6,10.5,54.7,21,52,32.1C49.3,43.2,43.9,54.9,34.7,58.8C25.6,62.7,12.8,58.8,-1.3,61C-15.4,63.2,-30.8,71.7,-42.7,69.4C-54.5,67.1,-62.9,54.1,-67.6,40.7C-72.4,27.4,-73.7,13.7,-71.5,1.2C-69.4,-11.2,-63.9,-22.5,-55.7,-29.9C-47.5,-37.4,-36.7,-41.1,-27,-48.8C-17.3,-56.5,-8.6,-68.1,1.9,-71.4C12.4,-74.6,24.7,-69.4,33.5,-61.2Z"
+										transform="translate(100 90)"
+									/>
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Hero End -->
+
+		<!--* About Section -->
+		<section id="about" class="pt-36 pb-32 dark:bg-dark" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+			<div class="container">
+				<div class="flex flex-wrap">
+					<div class="w-full px-4 mb-10 lg:w-1/2">
+						<h4 class="font-bold uppercase text-primary text-lg mb-3">
+							Tentang Saya
+						</h4>
+						<h2 class="font-bold text-dark dark:text-white text-3xl mb-5 max-w-md">
+							Kenalan dulu gak sihh?
+						</h2>
+						<p class="font-medium text-base text-secondary">
+							Rafly Rizqullah Yusuf, atau biasa dipanggil Rafly, berasal dari
+							Trenggalek dan asli Trenggalek. Suka mencoba tantangan coding "Kata" di
+							platform 
+							<a href="https://www.codewars.com/dashboard"  target="_blank" class="hover:text-primary">Codewars</a>, 
+							juga tantangan hacking web seperti Natas dari
+							<a href="https://overthewire.org/wargames/"  target="_blank" class="hover:text-primary">OverTheWire</a>, 
+							maupun tantangan 
+							<a href="https://ctf.rajawalisecteam.eu.org/"  target="_blank" class="hover:text-primary">CTF</a> 
+							(Capture The Flag) dari  
+							<a href="https://ctf.rajawalisecteam.eu.org/"  target="_blank" class="hover:text-primary">Rajawali Security Team</a> 
+						</p>
+					</div>
+					<div class="w-full px-4 lg:w-1/2">
+						<h3
+							class="font-semibold text-dark dark:text-white text-2xl mb-4 lg:text-3xl lg:pt-10"
+						>
+							Mari berteman
+						</h3>
+						<p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+							Ada pepatah mengatakan <i>"Tak kenal maka kenalan"</i>
+							kurang lebih seperti itu... Jadi alangkah baiknya kita berkenalan
+							terlebih dahulu... silahkan kunjungi sosial media saya dibawah ini
+							hehehe😄
+						</p>
+						<div class="flex items-center">
+							<!-- Instagram  -->
+							<a
+								href="https://instagram.com/rfly_rzqllh"
+								target="_blank"
+								translate="_blank"
+								class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border dark:border-slate-300 dark:text-slate-300 text-slate-700 border-slate-700 hover:border-primary hover:bg-primary hover:text-white"
+							>
+								<svg
+									width="20"
+									class="fill-current"
+									role="img"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<title>Instagram</title>
+									<path
+										d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+									/>
+								</svg>
+							</a>
+							<!-- X  -->
+							<a
+								href="https://x.com/rafli_rizq"
+								target="_blank"
+								translate="_blank"
+								class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border dark:border-slate-300 dark:text-slate-300 text-slate-700 border-slate-700 hover:border-primary hover:bg-primary hover:text-white"
+							>
+								<svg
+									width="20"
+									class="fill-current"
+									role="img"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<title>X</title>
+									<path
+										d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About End -->
+
+		<!--* Portfolio -->
+		<section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+			<div class="container">
+				<div class="w-full px-4">
+					<div class="max-w-xl mx-auto text-center mb-16">
+						<h4 class="font-semibold text-primary text-lg mb-2">Portfolio</h4>
+						<h2
+							class="font-bold text-dark dark:text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+						>
+							Project Terbaru
+						</h2>
+						<p class="font-medium text-md text-secondary md:text-lg">
+							Berikut beberapa gambar dari proyek-proyek yang telah saya kerjakan
+							beberapa waktu terakhir. Mencakup beberapa aspek, mulai dari pengembangan
+							Frontend dan Backend dari web maupun mobile, hingga desain API dan
+							manajemen database.
+						</p>
+					</div>
+				</div>
+				<div
+					class="w-full px-4 flex flex-wrap justify-center xl:mx-auto xl:w-10/12"
+				>
+					<div class="mb-12 p-4 md:w-1/2">
+						<div class="rounded-md shadow-md overflow-hidden">
+							<img src="src/img/portfolio/2.png" alt="" width="w-full" />
+						</div>
+						<h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
+							Manajemen Reservasi - Admin | Reservasi Bengkel
+						</h3>
+						<p class="font-medium text-base text-secondary">
+							Aplikasi yang saya buat menggunakan React untuk frontend dan .NET untuk
+							backend API-nya. Dengan tema reservasi bengkel, aplikasi ini memungkinkan
+							admin untuk mengelola seluruh data, sementara pelanggan dapat melakukan
+							reservasi kendaraan, mengisi data diri, serta menyertakan detail
+							kendaraan mereka.
+						</p>
+					</div>
+					<div class="mb-12 p-4 md:w-1/2">
+						<div class="rounded-md shadow-md overflow-hidden">
+							<img src="src/img/portfolio/3.png" alt="" width="w-full" />
+						</div>
+						<h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
+							Layanan Bengkel Central Otomotif
+						</h3>
+						<p class="font-medium text-base text-secondary">
+							Aplikasi yang saya buat ini menggunakan React untuk frontend dan Node.js
+							untuk backend API-nya. Mirip dengan aplikasi sebelumnya, aplikasi ini
+							memiliki fitur yang lebih sederhana, hanya mencakup tampilan layanan yang
+							tersedia serta fitur login dan registrasi untuk pengguna baru.
+							Fitur-fitur ini dirancang untuk dapat diintegrasikan dengan aplikasi
+							sebelumnya.
+						</p>
+					</div>
+					<div class="mb-12 p-4 md:w-1/2">
+						<div class="rounded-md shadow-md overflow-hidden">
+							<img src="src/img/portfolio/4.png" alt="" width="w-full" />
+						</div>
+						<h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
+							Transaksi Reservasi Bengkel
+						</h3>
+						<p class="font-medium text-base text-secondary">
+							Aplikasi yang saya buat menggunakan framework PHP Laravel dengan tema
+							yang sama, yaitu reservasi bengkel. Namun, aplikasi ini dirancang khusus
+							untuk pengguna dengan peran kasir. Di dalam aplikasi ini, terdapat fitur
+							untuk mengelola kumpulan data reservasi pelanggan serta transaksi,
+							memudahkan kasir dalam melakukan tugas-tugas administratif terkait
+							reservasi dan pembayaran.
+						</p>
+					</div>
+					<div class="mb-12 p-4 md:w-1/2">
+						<div class="rounded-md shadow-md overflow-hidden">
+							<img src="src/img/portfolio/5.jpg" alt="" width="w-full" />
+						</div>
+						<h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
+							Layanan Bengkel Central Otomotif - Mobile
+						</h3>
+						<p class="font-medium text-base text-secondary">
+							Aplikasi yang saya buat menggunakan React Native untuk frontend dan .NET
+							untuk backend API-nya. Aplikasi ini merupakan versi mobile dari layanan
+							Bengkel Central Otomotif. Berbeda dari aplikasi sebelumnya, aplikasi ini
+							tidak memiliki fitur login atau registrasi. Aplikasi ini menampilkan
+							bagian home, deskripsi singkat tentang bengkel serta daftar layanan yang
+							tersedia.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Portfolio End -->
+
+		<!--* Tech -->
+		<section
+			id="tech"
+			class="pt-36 pb-16 bg-slate-700 dark:bg-slate-300 overflow-hidden"
+			data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"
+		>
+			<div class="container">
+				<div class="w-full px-4">
+					<div class="mx-auto text-center">
+						<h4 class="font-semibold text-primary text-lg mb-2">Tech</h4>
+						<h2
+							class="font-bold text-white dark:text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+						>
+							Teknologi yang digunakan
+						</h2>
+						<p class="font-medium text-md text-secondary md:text-lg">
+							Berikut adalah beberapa teknologi yang saya gunakan, baik untuk belajar,
+							bekerja, menyelesaikan tugas, maupun saat melakukan uji coba. Saya harap
+							teman-teman dapat menemukan teknologi yang sesuai atau mungkin juga
+							tertarik untuk mencobanya.
+						</p>
+					</div>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!--* Odoo -->
+						<div class="swiper-slide">
+							<a
+								href="https://www.odoo.com"
+								target="_blank"
+								class="max-w-full mx-4 py-4 opacity-90 hover:opacity-100 scale-150 duration-500 lg:mx-8 xl:mx-10 transition"
+							>
+								<img src="src/img/tech/odoo.png" alt="" />
+							</a>
+						</div>
+
+						<!--* Python, JS, Laravel -->
+						<div class="swiper-slide">
+							<a
+								href="https://docs.python.org"
+								target="_blank"
+								class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-8 xl:mx-10"
+							>
+								<img src="src/img/tech/python.png" alt="" />
+							</a>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+								target="_blank"
+								class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-8 xl:mx-10"
+							>
+								<img src="src/img/tech/javascript.png" alt="" />
+							</a>
+							<a
+								href="https://laravel.com"
+								target="_blank"
+								class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-8 xl:mx-10"
+							>
+								<img src="src/img/tech/laravel.png" alt="" />
+							</a>
+						</div>
+
+						<!--* HTML, CSS, Bootstrap, Tailwind, React -->
+						<div class="swiper-slide">
+							<div class="flex flex-wrap items-center justify-center">
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+									target="_blank"
+									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/html.png" alt="" />
+								</a>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+									target="_blank"
+									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/css.png" alt="" />
+								</a>
+								<a
+									href="https://getbootstrap.com"
+									target="_blank"
+									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/bootstrap.png" alt="" />
+								</a>
+								<a
+									href="https://tailwindcss.com"
+									target="_blank"
+									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/tailwind.png" alt="" />
+								</a>
+								<a
+									href="https://reactjs.org"
+									target="_blank"
+									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/react.png" alt="" />
+								</a>
+							</div>
+						</div>
+
+						<!--* Dotnet, Node, Php, MySql -->
+						<div class="swiper-slide">
+							<div class="flex flex-wrap items-center justify-center">
+								<a
+									href="https://docs.microsoft.com/en-us/dotnet/"
+									target="_blank"
+									class="max-w-[60px] sm:max-w-[90px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/dotnet.png" alt="" />
+								</a>
+								<a
+									href="https://nodejs.org"
+									target="_blank"
+									class="max-w-[60px] sm:max-w-[90px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/node.png" alt="" />
+								</a>
+								<a
+									href="https://www.php.net"
+									target="_blank"
+									class="max-w-[60px] sm:max-w-[90px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/php.png" alt="" />
+								</a>
+								<a
+									href="https://dev.mysql.com"
+									target="_blank"
+									class="scale-150 max-w-[60px] sm:max-w-[90px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/mysql.png" alt="" />
+								</a>
+							</div>
+						</div>
+
+						<!--* VsCode, PostgeSql, Git, Github, Firebase -->
+						<div class="swiper-slide">
+							<div class="flex flex-wrap items-center justify-center">
+								<a
+									href="https://code.visualstudio.com"
+									target="_blank"
+									class="scale-110 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/vs-code.png" alt="" />
+								</a>
+								<a
+									href="https://www.postgresql.org"
+									target="_blank"
+									class="scale-75 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/postgresql.png" alt="" />
+								</a>
+								<a
+									href="https://git-scm.com"
+									target="_blank"
+									class="scale-75 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/git.png" alt="" />
+								</a>
+								<a
+									href="https://docs.github.com"
+									target="_blank"
+									class="scale-75 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/github.png" alt="" />
+								</a>
+								<a
+									href="https://firebase.google.com/docs"
+									target="_blank"
+									class="scale-75 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+								>
+									<img src="src/img/tech/firebase.png" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<!-- Tech End -->
+
+		<!--* Blog -->
+		<section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+			<div class="container">
+				<div class="w-full px-4">
+					<div class="max-w-xl mx-auto text-center mb-16">
+						<h4 class="font-semibold text-primary text-lg mb-2">Blog</h4>
+						<h2
+							class="font-bold text-dark dark:text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+						>
+							Tulisan Terkini
+						</h2>
+						<p class="font-medium text-md text-secondary md:text-lg">
+							Berikut adalah tulisan-tulisan yang telah saya buat dalam beberapa waktu
+							terakhir. Kumpulan karya ini mencakup berbagai jenis konten, termasuk
+							dokumentasi teknis, cerita kreatif, serta teks ilmiah.
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-wrap">
+					<div class="w-full px-4 md:w-1/2 lg:w-1/3">
+						<div class="rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+							<img src="src/img/blog/ppt-bengkel-otomotif.png" alt="" class="w-full" />
+							<div class="py-8 px-6">
+								<h3>
+									<a
+										href="https://drive.google.com/file/d/1umKvdDm96o5pE6fYamSMnzaCeH94nf-U/view?usp=drive_link"
+										target="_blank"
+										class="block mb-3 font-semibold text-xl text-dark dark:text-white hover:text-primary truncate"
+										>PPT Bengkel Central Otomotif</a
+									>
+								</h3>
+								<p class="font-medium text-base text-secondary mb-6">
+									Menjelaskan alur kerja program yang saya gunakan dalam uji kompetensi
+									AstraTech pada 12 Juli 2024. Terdapat proses dan langkah-langkah, mulai
+									dari tahap hingga implementasi.
+								</p>
+								<a
+									class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+									target="_blank"
+									href="https://drive.google.com/file/d/1umKvdDm96o5pE6fYamSMnzaCeH94nf-U/view?usp=drive_link"
+									>Selengkapnya</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="w-full px-4 md:w-1/2 lg:w-1/3">
+						<div class="rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+							<img src="src/img/blog/festival-penulis.png" alt="" class="w-full" />
+							<div class="py-8 px-6">
+								<h3>
+									<a
+										href="https://drive.google.com/drive/folders/1oV_Cns0ahF9y0wubduUmwWPZcENKij8V?usp=sharing"
+										target="_blank"
+										class="block mb-3 font-semibold text-xl text-dark dark:text-white hover:text-primary truncate"
+										>Cerita Pendek Festival Penulis</a
+									>
+								</h3>
+								<p class="font-medium text-base text-secondary mb-6">
+									Beberapa karya tulis cerpen yang pernah saya buat karena FOMO (Fear of
+									Missing Out) terhadap teman saya yang mahir dalam sastra dan menulis.
+									hehehe 😄
+								</p>
+								<a
+									class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+									target="_blank"
+									href="https://drive.google.com/drive/folders/1oV_Cns0ahF9y0wubduUmwWPZcENKij8V?usp=sharing"
+									>Selengkapnya</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="w-full px-4 md:w-1/2 lg:w-1/3">
+						<div class="rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+							<img src="src/img/blog/remando-logo-hitam.jpg" alt="" class="w-full" />
+							<div class="py-8 px-6">
+								<h3>
+									<a
+										href="https://drive.google.com/file/d/1DNYJnNs-mDVmhdqIwW-Ixk-LJma0cw4b/view?usp=drive_link"
+										target="_blank"
+										class="block mb-3 font-semibold text-xl text-dark dark:text-white hover:text-primary truncate"
+										>Proposal REMANDO</a
+									>
+								</h3>
+								<p class="font-medium text-base text-secondary mb-6">
+									Proposal yang saya buat dengan tujuan menyelesaikan tugas akhir KWU
+									mengenai bisnis kewirausahaan. Semoga bisa tercapai dan menjadi
+									kenyataan 🤲 wkwkwk
+								</p>
+								<a
+									class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+									target="_blank"
+									href="https://drive.google.com/file/d/1DNYJnNs-mDVmhdqIwW-Ixk-LJma0cw4b/view?usp=drive_link"
+									>Selengkapnya</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Blog End -->
+
+		<!--* Contact -->
+		<section id="contact" class="pt-36 pb-32 dark:bg-slate-800" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+			<div class="container">
+				<div class="w-full px-4">
+					<div class="max-w-xl mx-auto text-center mb-16">
+						<h4 class="font-semibold text-primary text-lg mb-2">Contact</h4>
+						<h2
+							class="font-bold text-dark dark:text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+						>
+							Contact Me
+						</h2>
+						<p class="font-medium text-md text-secondary md:text-lg">
+							Jika teman-teman memiliki kritik, saran, atau masukan untuk developer.
+							Silakan kirimkan tanggapan dan rekomendasi melalui formulir di bawah ini. 
+						</p>
+					</div>
+				</div>
+				<!-- <form action="https://script.google.com/macros/s/AKfycbyMFtpzyxFbgsjwEiBFWn5Dl_Rnadl_Gmv8xYz4ZKEbdSP5A4nUAahPC5dofu6D8uOJ4Q/exec" method="POST"> -->
+				<form id="contactForm">
+					<div class="w-full lg:w-2/3 lg:mx-auto">
+						<div class="w-full px-4 mb-8">
+							<label for="name" class="text-base text-primary font-bold">Nama</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								class="w-full bg-slate-200 text-dark dark:text-white p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+							/>
+						</div>
+						<div class="w-full px-4 mb-8">
+							<label for="email" class="text-base text-primary font-bold">Email</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								class="w-full bg-slate-200 text-dark dark:text-white p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+							/>
+						</div>
+						<div class="w-full px-4 mb-8">
+							<label for="message" class="text-base text-primary font-bold"
+								>Pesan</label
+							>
+							<textarea
+								name="message"
+								id="message"
+								class="w-full bg-slate-200 text-dark dark:text-white h-32 p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1"
+							></textarea>
+						</div>
+						<div class="w-full px-4 mx-auto sm:w-10/12">
+							<button
+								class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:shadow-lg transition duration-500"
+							>
+								Kirim
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- Contact End -->
+
+		<!--* Footer -->
+		<footer class="bg-dark pt-24 pb-12" >
+			<div class="container">
+				<!-- 3 Kolom 1 Baris -->
+				<div class="flex flex-wrap">
+					<div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+						<h2 class="mb-5 text-white text-4xl font-bold">Remando</h2>
+						<h3 class="mb-2 text-white text-2xl">Hubungi kami</h3>
+						<a class="inline-block text-base hover:text-primary mb-1" href="mailto:rizqullahyusufrafly@gmail.com">rizqullahyusufrafly@gmail.com</a>
+						<a class="inline-block text-base hover:text-primary mb-2" href="mailto:210393@smkmutumalang.sch.id">210393@smkmutumalang.sch.id</a>
+						<a class="inline-block text-base hover:text-primary" href="">Jln. Trenggalek - Ponorogo KM7 Gondang, Tugu, Trenggalek</a>
+					</div>
+					<div class="w-full px-4 mb-12 md:w-1/3">
+						<h3 class="font-semibold text-xl text-white mb-2">Rekan | Partner | Kolega</h3>
+						<ul class="text-slate-300">
+							<li>
+								<a href="https://web-flora.web.app/" target="_blank" class="inline-block text-base hover:text-primary mb-2"
+									>Schuvi</a
+								>
+							</li>
+							<li>
+								<a class="inline-block text-base hover:text-primary mb-2"
+									>Jakii</a
+								>
+							</li>
+							<li>
+								<a class="inline-block text-base hover:text-primary mb-2"
+									>Galaxir Nexusyan</a
+								>
+							</li>
+							<li>
+								<a class="inline-block text-base hover:text-primary mb-2"
+									>Pangeran Arofan</a
+								>
+							</li>
+							<li>
+								<a class="inline-block text-base hover:text-primary mb-2"
+									>Kamaludin </a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="w-full px-4 mb-12 md:w-1/3">
+						<h3 class="font-semibold text-xl text-white mb-2">Tautan</h3>
+						<ul class="text-slate-300">
+							<li>
+								<a href="#home" class="inline-block text-base hover:text-primary mb-2"
+									>Beranda</a
+								>
+							</li>
+							<li>
+								<a href="#about" class="inline-block text-base hover:text-primary mb-2"
+									>Tentang Saya</a
+								>
+							</li>
+							<li>
+								<a href="#portfolio" class="inline-block text-base hover:text-primary mb-2"
+									>Portofolio</a
+								>
+							</li>
+							<li>
+								<a href="#tech" class="inline-block text-base hover:text-primary mb-2"
+									>Tech</a
+								>
+							</li>
+							<li>
+								<a href="#blog" class="inline-block text-base hover:text-primary mb-2"
+									>Blog</a
+								>
+							</li>
+							<li>
+								<a href="#contact" class="inline-block text-base hover:text-primary mb-2"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 1 Baris -->
+				<div class="w-full pt-10 border-t border-slate-700">
+					<div class="flex items-center justify-center mb-5">
+						<!-- Instagram  -->
+						<a
+							href="https://www.instagram.com/rfly_rzqllh"
+							target="_blank"
+							translate="_blank"
+							class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+						>
+							<svg
+								width="20"
+								role="img"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+								class="fill-current"
+							>
+								<title>Instagram</title>
+								<path
+									d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+								/>
+							</svg>
+						</a>
+						<!-- Gmail  -->
+						<a
+							href="mailto:rizqullahyusufrafly@gmail.com"
+							target="_blank"
+							translate="_blank"
+							class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+						>
+							<svg
+								width="20"
+								role="img"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+								class="fill-current"
+							>
+								<title>Gmail</title>
+								<path
+									d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+								/>
+							</svg>
+						</a>
+						<!-- Linkedin  -->
+						<a
+							href="https://www.linkedin.com/in/rafly-rizqullah-yusuf-1576aa256/"
+							target="_blank"
+							translate="_blank"
+							class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+						>
+						<svg width="20" role="img" role="img" viewBox="0 0 24 24" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+							<title>LinkedIn</title>
+							<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+						</a>
+						<!-- Whatsapp -->
+						<a
+							href="https://wa.me/6287859860459"
+							target="_blank"
+							translate="_blank"
+							class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+						>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+							<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+						</svg>
+						</a>
+						<!-- Github -->
+						<a
+							href="https://github.com/RizqullahY"
+							target="_blank"
+							translate="_blank"
+							class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+						>
+						<i class="fa-brands fa-github scale-150"></i>
+						</a>
+					</div>
+					<p class="font-medium text-xs text-slate-500 text-center">
+						Dibuat oleh
+						<a href="#" class="font-bold text-primary"
+							>Rafly Rizqullah Yusuf</a
+						>, menggunakan
+						<a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500"
+							>Tailwind CSS</a
+						>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer End -->
+
+		<!-- Back to Top -->
+		<a
+			href="#home"
+			class="justify-center items-center bg-primary flex rounded-full fixed z-[9999] bottom-4 right-4 h-10 w-10"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				fill="white"
+				class="bi bi-arrow-up"
+				viewBox="0 0 16 16"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+				/>
+			</svg>
+		</a>
+		<!-- Back to Top End -->
+
+		<script src="src/js/script.js"></script>
+		<!-- AlpineJS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.1/dist/cdn.min.js"
+			defer
+		></script>
+		<!-- Swipper Pagination -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper(".swiper-container", {
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				autoplay: {
+               delay: 3000, 
+               disableOnInteraction: false, 
+            },
+				speed: 3000,
+			});
+		</script>
+		<!-- Ajax SweetAlert Kirim data contact -->
+		<script>
+			$(document).ready(function () {
+				var isSending = false; 
+				$("#contactForm").submit(function (event) {
+					event.preventDefault(); 
+					if (isSending) return; 
+					isSending = true; 
+					var formData = {
+						name: $("#name").val(),
+						email: $("#email").val(),
+						message: $("#message").val(),
+					};
+					$.ajax({
+						type: "POST",
+						url: "https://script.google.com/macros/s/AKfycbyMFtpzyxFbgsjwEiBFWn5Dl_Rnadl_Gmv8xYz4ZKEbdSP5A4nUAahPC5dofu6D8uOJ4Q/exec", 
+						data: formData,
+						success: function (response) {
+							Swal.fire({
+								title: "Berhasil!",
+								text: "Pesan telah terkirim.",
+								icon: "success",
+								confirmButtonText: "OK",
+							}).then(function () {
+								isSending = false; 
+								$("#contactForm")[0].reset(); 
+							});
+						},
+						error: function () {
+							Swal.fire({
+								title: "Gagal!",
+								text: "Terjadi kesalahan, coba lagi.",
+								icon: "error",
+								confirmButtonText: "OK",
+							}).then(function () {
+								isSending = false; 
+							});
+						},
+					});
+				});
+			});
+		</script>
+		<!-- AOS Init -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>AOS.init();</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+.tittle{
+   font-size: 60px;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.mulai{
+   display: block;
+   margin: auto;
+   font-size: 50px;
+}
+.score-tittle{
+font-size: 60px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+   width: 600px;
+   height: 400px;
+   margin: auto;
+   border: 1px solid black;
+}
+.tanah{        /* Kotak yg besar */
+   width: 200px;
+   height: 200px;
+   position: relative;
+   overflow: hidden; /* Gambar tikus disebunyikan */
+   float: left; /* Sebelum diberi float tanah::after nya kebawah | left artinya dari kiri */
+}
+.tanah::after{  /* Kotak yg kecil */
+   content: '';
+   display: block;
+   width: 200px;
+   height: 60px;
+   background-size: 80%;
+   background-color: aquamarine;
+   bottom: 0;
+   position: absolute;
+}
+.tikus{
+   width: 100%;
+   height: 100%;
+   background: url(../img/tikus_tanah_ilustrasi.png) bottom center no-repeat;
+   background-size: 80%;
+   position: absolute;
+   top: 100px ;
+   transition: top 0.3s;
+}
+
+.tanah.muncul .tikus{   /* Ketika tanah memiliki function muncul maka tikus akan kembali keatas */
+   top: 0;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Deret Fibonacci</title>
+   </head>
+   <body>
+      <script>
+         // function fibonacci(num){
+         //    let n1 = 1;       // angka pertama
+         //    let n2 = 2;       // angka kedua
+         //    let next = 0;     // bakal tempat penjumlahan
+         //    for( let i = 1 ; i <= num; i++){
+         //       console.log(n1);     // n1 yang ditampilkan
+         //       next = n1 + n2;      // next adalah hasil penjumlahan n1 dan n2
+         //       n1 = n2;          // n1 geser menjadi n2
+         //       n2 = next         // n2 geser menjadi next
+         //    }
+         // }
+            
+         // Rekursif
+         function fibonacci(num) {
+            if (num <= 2) return num;
+            else{
+               return fibonacci( num - 1) + fibonacci(num - 2)
+            }
+         }
+      </script>
+   </body>
+</html>
